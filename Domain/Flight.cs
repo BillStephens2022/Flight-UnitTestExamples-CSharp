@@ -2,6 +2,10 @@
 {
     public class Flight
     {
+        // note: with no access modifier explicitly stated, this is effectively private
+        // The 2 lines below essentially ensure that the Booking List is read-only
+        List<Booking> bookingList = new();
+        public IEnumerable<Booking> BookingList => bookingList;
         public List<Booking> BookingList { get; set; } = new List<Booking>();
         public int RemainingNumberOfSeats { get; set; }
         public Flight(int seatCapacity)
@@ -14,9 +18,8 @@
             if (numberOfSeats > this.RemainingNumberOfSeats)
                 return new OverbookingError();
             RemainingNumberOfSeats -= numberOfSeats;
-            BookingList.Add(new Booking(passengerEmail, numberOfSeats));
-            return null;
-         
+            bookingList.Add(new Booking(passengerEmail, numberOfSeats));
+            return null;        
         }
     }
 }
