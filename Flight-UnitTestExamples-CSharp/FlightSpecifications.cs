@@ -37,5 +37,36 @@ namespace Flight_UnitTestExamples_CSharp
             error.Should().BeNull();
 
         }
+
+        [Fact]
+        public void Booking_reduces_the_number_of_seats_2()
+        {
+            var flight = new Flight(seatCapacity: 6);
+
+            flight.Book("bill@gmail.com", 3);
+
+            flight.RemainingNumberOfSeats.Should().Be(3);
+        }
+
+        [Fact]
+        public void Booking_reduces_the_number_of_seats_3()
+        {
+            var flight = new Flight(seatCapacity: 10);
+
+            flight.Book("bill@gmail.com", 2);
+
+            flight.RemainingNumberOfSeats.Should().Be(8);
+        }
+
+        [Fact]
+        public void Booking_reduces_the_number_of_seats_4()
+        {
+            var flight = new Flight(seatCapacity: 5);
+
+            flight.Book("bill@gmail.com", 1);
+
+            flight.RemainingNumberOfSeats.Should().Be(4);
+        }
+
     }
 }
