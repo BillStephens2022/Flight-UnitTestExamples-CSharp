@@ -4,14 +4,14 @@
     "C:\\Users\\two4o\\Desktop\\C# Development\\Flight-UnitTestExamples-CSharp\\Flight-UnitTestExamples-CSharp\\Flight-UnitTestExamples-CSharp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\two4o\\Desktop\\C# Development\\Flight-UnitTestExamples-CSharp\\Flight-UnitTestExamples-CSharp\\Flight-UnitTestExamples-CSharp.csproj": {
+    "C:\\Users\\two4o\\Desktop\\C# Development\\Flight-UnitTestExamples-CSharp\\Domain.Tests\\Domain.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\two4o\\Desktop\\C# Development\\Flight-UnitTestExamples-CSharp\\Flight-UnitTestExamples-CSharp\\Flight-UnitTestExamples-CSharp.csproj",
-        "projectName": "Flight-UnitTestExamples-CSharp",
-        "projectPath": "C:\\Users\\two4o\\Desktop\\C# Development\\Flight-UnitTestExamples-CSharp\\Flight-UnitTestExamples-CSharp\\Flight-UnitTestExamples-CSharp.csproj",
+        "projectUniqueName": "C:\\Users\\two4o\\Desktop\\C# Development\\Flight-UnitTestExamples-CSharp\\Domain.Tests\\Domain.Tests.csproj",
+        "projectName": "Domain.Tests",
+        "projectPath": "C:\\Users\\two4o\\Desktop\\C# Development\\Flight-UnitTestExamples-CSharp\\Domain.Tests\\Domain.Tests.csproj",
         "packagesPath": "C:\\Users\\two4o\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\two4o\\Desktop\\C# Development\\Flight-UnitTestExamples-CSharp\\Flight-UnitTestExamples-CSharp\\obj\\",
+        "outputPath": "C:\\Users\\two4o\\Desktop\\C# Development\\Flight-UnitTestExamples-CSharp\\Domain.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\two4o\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -44,7 +44,138 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\two4o\\Desktop\\C# Development\\Flight-UnitTestExamples-CSharp\\Domain\\Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\two4o\\Desktop\\C# Development\\Flight-UnitTestExamples-CSharp\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "C:\\Users\\two4o\\Desktop\\C# Development\\Flight-UnitTestExamples-CSharp\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\two4o\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\two4o\\Desktop\\C# Development\\Flight-UnitTestExamples-CSharp\\Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\two4o\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\two4o\\Desktop\\C# Development\\Flight-UnitTestExamples-CSharp\\Flight-UnitTestExamples-CSharp\\Flight-UnitTestExamples-CSharp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\two4o\\Desktop\\C# Development\\Flight-UnitTestExamples-CSharp\\Flight-UnitTestExamples-CSharp\\Flight-UnitTestExamples-CSharp.csproj",
+        "projectName": "Flight-UnitTestExamples-CSharp",
+        "projectPath": "C:\\Users\\two4o\\Desktop\\C# Development\\Flight-UnitTestExamples-CSharp\\Flight-UnitTestExamples-CSharp\\Flight-UnitTestExamples-CSharp.csproj",
+        "packagesPath": "C:\\Users\\two4o\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\two4o\\Desktop\\C# Development\\Flight-UnitTestExamples-CSharp\\Flight-UnitTestExamples-CSharp\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\two4o\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\two4o\\Desktop\\C# Development\\Flight-UnitTestExamples-CSharp\\Domain.Tests\\Domain.Tests.csproj": {
+                "projectPath": "C:\\Users\\two4o\\Desktop\\C# Development\\Flight-UnitTestExamples-CSharp\\Domain.Tests\\Domain.Tests.csproj"
+              },
+              "C:\\Users\\two4o\\Desktop\\C# Development\\Flight-UnitTestExamples-CSharp\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\two4o\\Desktop\\C# Development\\Flight-UnitTestExamples-CSharp\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[6.12.0, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.8.0, )"
