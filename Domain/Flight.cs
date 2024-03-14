@@ -6,7 +6,6 @@
         // The 2 lines below essentially ensure that the Booking List is read-only
         List<Booking> bookingList = new();
         public IEnumerable<Booking> BookingList => bookingList;
-        public List<Booking> BookingList { get; set; } = new List<Booking>();
         public int RemainingNumberOfSeats { get; set; }
         public Flight(int seatCapacity)
         {
