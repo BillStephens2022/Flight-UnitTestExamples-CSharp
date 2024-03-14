@@ -2,15 +2,21 @@ using FluentAssertions;
 using System.Security.Cryptography;
 using Data;
 using Domain;
+using Microsoft.EntityFrameworkCore;
 
 namespace Application.Tests
 {
     public class FlightApplicationSpecifications
     {
-        [Fact]
-        public void Books_flights()
+        [Theory]
+        [InlineData("m@m.com", 2)]
+        [InlineData("a@a.com", 2)]
+        public void Books_flights(string passengerEmail, int numberOfSeats)
         {
-            var entities = new Entities();
+            var entities = new Entities(new DbContextOptionsBuilder<Entities>()
+                .UseInMemoryDatabase("Flights")
+                .Options);
+
             var flight = new Flight(3);
             entities.Flights.Add(flight);
 
@@ -18,11 +24,11 @@ namespace Application.Tests
 
             bookingService.Book(new BookDto(
                 flightId: flight.Id,
-                passengerEmail: "bob@email.com",
-                numberOfSeats: 2
+                passengerEmail: passengerEmail,
+                numberOfSeats: numberOfSeats
                 ));
             bookingService.FindBookings(flight.Id).Should().ContainEquivalentOf(
-                new BookingRm(passengerEmail: "bob@email.com", numberOfSeats: 2)
+                new BookingRm(passengerEmail, numberOfSeats)
                 );
         }
     }
