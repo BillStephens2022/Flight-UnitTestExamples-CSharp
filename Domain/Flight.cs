@@ -14,6 +14,7 @@
                 return new OverbookingError();
             RemainingNumberOfSeats -= numberOfSeats;
             return null;
+         
         }
     }
 }
