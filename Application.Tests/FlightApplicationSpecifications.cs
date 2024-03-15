@@ -3,6 +3,7 @@ using System.Security.Cryptography;
 using Data;
 using Domain;
 using Microsoft.EntityFrameworkCore;
+using Application.Tests;
 
 namespace Application.Tests
 {
@@ -32,7 +33,10 @@ namespace Application.Tests
                 );
         }
     }
+}
 
+namespace Application
+{
     public class BookingService
     {
         public Entities Entities { get; set; }
@@ -58,30 +62,11 @@ namespace Application.Tests
                      ));
         }
     }
+}
 
-    public class BookDto
-    {
-        public Guid FlightId { get; set; }
-        public string PassengerEmail { get; set; }
-        public int NumberOfSeats { get; set; }
+namespace Application.Tests
+{
+  
 
-        public BookDto(Guid flightId, string passengerEmail, int numberOfSeats)
-        {
-            FlightId = flightId;
-            PassengerEmail = passengerEmail;
-            NumberOfSeats = numberOfSeats;
-        }
-    }
-
-    public class BookingRm
-    {
-        public string PassengerEmail { get; set; }
-        public int NumberOfSeats { get; set; }
-
-        public BookingRm(string passengerEmail, int numberOfSeats)
-        {
-            PassengerEmail = passengerEmail;
-            NumberOfSeats = numberOfSeats;
-        }
-    }
+    
 }

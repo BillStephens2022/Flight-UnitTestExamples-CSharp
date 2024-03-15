@@ -10,3 +10,9 @@ C:\Users\two4o\Desktop\C# Development\Flight-UnitTestExamples-CSharp\Application
 C:\Users\two4o\Desktop\C# Development\Flight-UnitTestExamples-CSharp\Application\obj\Debug\net8.0\refint\Application.dll
 C:\Users\two4o\Desktop\C# Development\Flight-UnitTestExamples-CSharp\Application\obj\Debug\net8.0\Application.pdb
 C:\Users\two4o\Desktop\C# Development\Flight-UnitTestExamples-CSharp\Application\obj\Debug\net8.0\ref\Application.dll
+C:\Users\two4o\Desktop\C# Development\Flight-UnitTestExamples-CSharp\Application\bin\Debug\net8.0\Data.dll
+C:\Users\two4o\Desktop\C# Development\Flight-UnitTestExamples-CSharp\Application\bin\Debug\net8.0\Domain.dll
+C:\Users\two4o\Desktop\C# Development\Flight-UnitTestExamples-CSharp\Application\bin\Debug\net8.0\Data.pdb
+C:\Users\two4o\Desktop\C# Development\Flight-UnitTestExamples-CSharp\Application\bin\Debug\net8.0\Domain.pdb
+C:\Users\two4o\Desktop\C# Development\Flight-UnitTestExamples-CSharp\Application\obj\Debug\net8.0\Application.csproj.AssemblyReference.cache
+C:\Users\two4o\Desktop\C# Development\Flight-UnitTestExamples-CSharp\Application\obj\Debug\net8.0\Applicat.44B5EDA2.Up2Date
