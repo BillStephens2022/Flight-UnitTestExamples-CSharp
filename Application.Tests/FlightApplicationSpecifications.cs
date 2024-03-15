@@ -25,7 +25,7 @@ namespace Application.Tests
         [Theory]
         [InlineData("m@m.com", 2)]
         [InlineData("a@a.com", 2)]
-        public void Books_flights(string passengerEmail, int numberOfSeats)
+        public void Remembers_bookings(string passengerEmail, int numberOfSeats)
         {
             var flight = new Flight(3);
             entities.Flights.Add(flight);
